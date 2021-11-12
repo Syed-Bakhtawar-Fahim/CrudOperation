@@ -170,7 +170,7 @@ const addUser = () => {
   let email = document.getElementById("email").value;
   let address = document.getElementById("address").value;
   axios
-    .post("https://crudapiserver1.herokuapp.com/user", {
+    .post("https://crudoperation123456.herokuapp.com/user", {
       name: name,
       email: email,
       address: address,
@@ -187,7 +187,7 @@ const addUser = () => {
 const getUsers = () => {
   const result = document.getElementById("result");
   axios
-    .get("https://crudapiserver1.herokuapp.com/users")
+    .get("https://crudoperation123456.herokuapp.com/users")
     .then(function (response) {
       console.log(response.data);
       const users = response.data;
@@ -220,17 +220,17 @@ const updateData = async () => {
 
   if (name) {
     axios
-      .put(`https://crudapiserver1.herokuapp.com/user/${userid}`, { name })
+      .put(`https://crudoperation123456.herokuapp.com/user/${userid}`, { name })
       .then((res) => getUsers());
   }
   if (email) {
     axios
-      .put(`https://crudapiserver1.herokuapp.com/user/${userid}`, { email })
+      .put(`https://crudoperation123456.herokuapp.com/user/${userid}`, { email })
       .then((res) => getUsers());
   }
   if (address) {
     axios
-      .put(`https://crudapiserver1.herokuapp.com/user/${userid}`, { address })
+      .put(`https://crudoperation123456.herokuapp.com/user/${userid}`, { address })
       .then((res) => getUsers());
   }
 };
@@ -243,7 +243,7 @@ const deleteUser = () => {
   const result = document.getElementById("result");
   if (userid) {
     axios
-      .delete(`https://crudapiserver1.herokuapp.com/user/${userid}`)
+      .delete(`https://crudoperation123456.herokuapp.com/user/${userid}`)
       .then(() => getUsers());
   }
   result.innerHTML = "";
@@ -256,7 +256,7 @@ const getUser = () => {
   let userid = document.getElementById("userid").value;
   const result = document.getElementById("result");
   axios
-    .get(`https://crudapiserver1.herokuapp.com/user/${userid}`)
+    .get(`https://crudoperation123456.herokuapp.com/user/${userid}`)
     .then(function (response) {
       console.log(response.data);
       const users = response.data;
