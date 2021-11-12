@@ -10,24 +10,27 @@
   <body>
     <div class="main">
       <div class="add-user">
-        <h1>CRUD App</h1>
-        <h2>Add/Update/View/Delete Users</h2>
+        <div class="heading">
+          <h1>CRUD Operation App</h1>
+          <div id="line"></div>
+        </div>
+        <!-- <h2>Add/Update/View/Delete Users</h2> -->
         <form action="" class="userdata">
           <div class="input-con">
             <label for="userid">ID</label>
-            <input type="text" name="userid" id="userid" />
+            <input type="text" name="userid" id="userid" placeholder="Enter Your ID" />
           </div>
           <div class="input-con">
             <label for="Name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" placeholder="Enter Your Name"/>
           </div>
           <div class="input-con">
             <label for="Email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input type="text" name="email" id="email" placeholder="Enter your Email" />
           </div>
           <div class="input-con">
-            <label for="address">Address</label>
-            <textarea name="address" id="address" cols="28" rows="5"></textarea>
+            <label for="address">Message</label>
+            <textarea name="address" id="address" cols="28" rows="5" placeholder="You wanna say something?"></textarea>
           </div>
         </form>
         <div class="btn-con">
@@ -60,6 +63,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>
+
 
 <style>
  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
