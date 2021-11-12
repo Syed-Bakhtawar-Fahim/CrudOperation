@@ -62,7 +62,7 @@
 </html>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -86,9 +86,12 @@ h1 {
 .userdata {
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
-  background-color: #ddd;
+  background-color: #f7f7f7;
+  background-color: #73db71;
+  margin: 10px;
+  border-radius: 6px;
   grid-gap: 10px;
 }
 
@@ -105,18 +108,22 @@ form label {
 
 form input {
   margin: 25px;
-  padding: 5px;
+  padding: 8px 34px;
+  border: none;
+  border-radius: 4px;
 }
 
 textarea {
   margin: 10px;
+  border-radius: 6px;
+
 }
 
 .btn-con {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   padding: 10px;
 }
 
@@ -132,33 +139,82 @@ textarea {
 #update,
 #view,
 #delete {
-  padding: 5px 10px;
-  background: #111;
-  color: #ddd;
+  padding: 4px 19px;
   cursor: pointer;
-  border-radius: 5px;
+  background-color: #0bad0b;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
+#add,
+#update,
+#view,
+#delete:hover {
+  background-color: #0bad0b;
+}
+#add:hover{
+  color: #ddd;
+}
+#update:hover{
+  color: #ddd;
+}
+#view:hover{
+  color: #ddd;
+}
+#delete:hover{
+  color: #ddd;
+}
 .responsec {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 50px 0;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   padding: 5px;
   border: 1px solid #111;
 }
 
 .text-center {
-  text-align: center;
+  /* text-align: center; */
+  padding: 17px;
+  border-radius: 4px;
+  
 }
 
-table {
+.table {
   margin: 50px;
 }
 
 th {
   border-bottom: 1px dashed #111;
+}
+.buttons{
+  padding: 10px 10px;
+  background-color: aqua;
+}
+.heading{
+  background-color: #0bad0b;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+
+/* #line::before{
+  content: "OR";
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-bottom: 1px solid gray;
+  width: 25%;
+  
+} */
+
+thead{
+  
+  color: #fff;
+  background-color: #0bad0b;
 }
 
 </style>
